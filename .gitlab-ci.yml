@@ -1,0 +1,35 @@
+stages:
+  - deploy
+
+master-deploy:
+  stage: deploy
+  only: 
+    - master
+  script:
+    - aws s3 sync ./ s3://chart.dexko.co.kr/ --acl public-read --delete --cache-control max-age=0 --exclude ./.git --exclude .gitlab-ci.yml --exclude README.md
+    - echo 'deployed'
+    
+develop-deploy:
+  stage: deploy
+  only: 
+    - develop
+  script:
+    - aws s3 sync ./ s3://chart.dev.dexko.co.kr/ --acl public-read --delete --cache-control max-age=0 --exclude ./.git --exclude .gitlab-ci.yml --exclude README.md
+    - echo 'deployed'
+
+# release-deploy:
+#   stage: deploy
+#   only: 
+#     - release/first
+#   script:
+#     - rsync -v -e ssh ./dist/* ubuntu@10.0.21.140:/var/www/html -rhuP --delete
+#     - echo 'deployed'
+
+# hotfix 배포
+# release-deploy:
+#   stage: deploy
+#   only: 
+#     - hotfix/*
+#   script:
+#     - rsync -v -e ssh ./dist/* ubuntu@10.0.21.140:/var/www/html -rhuP --delete
+#     - echo 'deployed'

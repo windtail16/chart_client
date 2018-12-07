@@ -1,0 +1,497 @@
+/* 차트 상단 시세 정보 */
+
+/*
+#chart-top {
+  padding:15px 15px 0 15px;
+}
+
+#chart-market-info-row {
+  width: 100%;
+  display: table;
+  background-color:#fff;
+  box-shadow:0 2px 2px 1px #eaeaea;
+}
+
+#chart-market-info-row > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.logo-wrap {
+  padding-left:2%;
+  box-sizing:border-box;
+}
+*/
+
+/* logo */
+
+/*
+.logo {
+  display:block;
+  width:166px;
+  height:40px;
+  background:url("./img/logo.png") no-repeat 0 0;
+  background-size:cover;
+}
+*/
+/*
+.sel-box {
+  width:260px;
+  height: 80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.sel-box-label {
+  line-height: 18px;
+  height:80px;
+  padding:42px 40px 0px 17px; 
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  text-align:right;
+  box-sizing:border-box;
+}
+
+
+#market-coin-name {
+  position: relative;
+  color:#000;
+  font-size: 16px;
+  font-weight:bold;
+  padding-right: 20px;
+}
+
+.sel-box-label h3:after {
+  content:'';
+  display:block;
+ 
+  position:absolute; 
+  top:7px; 
+  right:0px;
+
+  width:13px;
+  height:11px;
+  background:url("./img/ico_arrow01.png") no-repeat 0 0;
+}
+
+#market-symbol {
+  position:absolute; 
+  top:15px; 
+  right:20px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.sel-box > ul {
+  display:none;
+  position:absolute;
+  top:80px;
+  left:-1px; 
+  right:-1px;
+  border:1px solid #ddd;
+  background-color:#fff;
+  z-index:2;
+}
+.sel-box > ul span { 
+  display:block;
+  height:24px;
+  line-height:24px;
+  padding:0 10px;
+  font-size:12px;
+  font-weight:400;
+  cursor:pointer;
+}
+.sel-box > ul span:hover {
+  background-color:#f2f2f2;
+}
+
+#chart-market-info-row > .current-price-wrap {
+  width:400px;
+}
+
+.current-price {
+  display: table;
+  width: 100%;
+}
+
+.current-price > * {  
+  
+  display: table-cell;
+  
+  text-align: right;
+  color: #000000;
+  font-weight: bold;
+  height: 60px;
+  vertical-align: middle;
+  padding: 20px 10px 0px 10px;
+}
+
+.current-price-value {
+  position:relative;
+  width:220px; 
+  padding:20px 10px 0 10px;
+  color:#777f88;  
+  font-size: 14px;
+  font-weight:normal;
+  text-align:right;
+}
+
+
+.current-price-value .current-price-text {
+  position:absolute; 
+  top:15px; 
+  right:10px;
+  line-height:18px;
+}
+.current-price-value .current-price-value-num {
+  color:#000;
+  font-size:28px;
+  font-weight:700;
+  letter-spacing:-1px;
+}
+
+.current-diff-col {
+  text-align: right;
+  position:relative;
+  width:180px;
+  color:#000;
+  font-size:16px;
+  font-weight:700;
+  letter-spacing:-1px;
+}
+
+.current-diff-col .diff-text {
+  position:absolute; 
+  top:15px; 
+  right:10px;
+  color:#777f88;  
+  font-size: 14px;
+  font-weight:400;
+  line-height:18px;
+}
+
+.current-price.up .current-price-value-num,
+.current-price.up .current-diff-col {
+  color:#d30000;
+}
+.current-price.down .current-price-value-num,
+.current-price.down .current-diff-col {
+  color:#1261c4;
+}
+*/
+/* 2018-12-05 Add By SH.Bae(Bloko) */
+/*
+html {
+  position: relative;
+}
+*/
+
+
+.break-sm cq-context {
+  top: 115px;
+  height: calc(100% - 100px);
+}
+
+
+.top-wrap {
+  padding: 15px 15px 0 15px;
+}
+
+.logo {
+  display:block;
+  height:40px;
+  background:url("./img/logo.png") no-repeat 0 0;
+  background-size:cover;
+}
+
+.top-wrap h1,
+.top-wrap h2,
+.top-wrap h3,
+.top-wrap h4,
+.top-wrap h5 {
+  margin: 0;
+}
+
+.top-bg {
+  background-color:#fff;
+  box-shadow:0 2px 2px 1px #eaeaea;
+  padding: 10px;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " "; 
+}
+
+.clearfix:after {
+  clear: both; 
+}
+
+.info-wrap > ul > li {
+  position: relative;
+}
+
+.info-wrap > ul > li label {
+  display: block;
+}
+
+/*셀랙트 박스*/
+.sel-box {
+  /*width:260px;*/
+  position: relative;
+  cursor: pointer;
+}
+
+.sel-box-label {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  text-align:right;
+  box-sizing:border-box;
+}
+
+#market-symbol {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+#market-coin-name {
+  position: relative;
+  color:#000;
+  font-size: 16px;
+  font-weight:bold;
+  padding-right: 20px;
+}
+
+.sel-box-label h3:after {
+  content:'';
+  display:block;
+  position:absolute; 
+  top:7px; 
+  right:0px;
+  width:13px;
+  height:11px;
+  background:url("./img/ico_arrow01.png") no-repeat 0 0;
+}
+
+.sel-box > ul {
+  display:none;
+  position:absolute;
+  max-height: 600px;
+  overflow-y: scroll;
+  left:-1px; 
+  right:-1px;
+  border:1px solid #ddd;
+  background-color:#fff;
+  z-index:2;
+  height: ;
+}
+.sel-box > ul span { 
+  display:block;
+  height:24px;
+  line-height:24px;
+  padding:0 10px;
+  font-size:14px;
+  font-weight:400;
+  cursor:pointer;
+}
+.sel-box > ul span:hover {
+  background-color:#f2f2f2;
+}
+
+/* 현재가 */
+.current-price-value {
+  text-align: right;
+}
+
+.current-price-text {
+  color: #777f88;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.current-price-value-num {
+  font-size: 28px;
+  color: #1261c4;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.current-price-value-unit {
+  color: #777f88;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* 등락률 */
+.current-diff-col {
+  text-align: right;
+}
+
+.diff-text {
+  color: #777f88;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.current-diff-col h5 {
+  font-size: 16px;
+  color: #1261c4;
+}
+
+
+/*
+cq-context {
+  top: 300px;
+}
+*/
+
+/* 모바일 우선 미디어 쿼리*/
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+/* Extra small devices (phones, 600px and down 폰, 600픽셀 이하) */
+@media only screen and (max-width: 600px) {
+  .top-wrap {
+    padding: 5px 5px 0 5px;
+  }
+  .logo-wrap {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .logo {
+    width:45px;
+  }
+
+  .sel-box {
+    margin-bottom: 10px;
+  }
+
+  .current-price-value,
+  .current-diff-col {
+    float: left;
+    
+  }
+
+  .current-price-value {
+    width: 60%;
+  }
+
+  .current-diff-col {
+    width: 40%;
+  }
+
+  .current-price-text,
+  .diff-text {
+    font-size: 12px;
+  }
+
+  .current-price-value-num {
+    font-size: 16px;
+  }
+
+  .current-diff-col h5 {
+    font-size: 16px;
+  }
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up 세로 모드 타블렛, 600픽셀 이상) */
+@media only screen and (min-width: 600px) {
+  .top-wrap .logo-wrap {
+    margin-top: 9px;
+    float: left;
+  }
+  .logo {
+    width:45px;
+  }
+  .info-wrap {
+    float: right;
+  }
+  .info-wrap .list-inline > li {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .info-wrap .list-inline > li+li {
+    padding-left: 15px;
+  }
+
+  .current-price-value-num {
+    font-size: 20px;
+  }
+
+  .current-diff-col h5 {
+    font-size: 20px;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up 가로모드 타블렛, 768픽셀 이상) */
+@media only screen and (min-width: 768px) {
+  
+
+  .info-wrap .list-inline > li+li {
+    padding-left: 40px;
+  }
+  .sel-box-label label {
+    margin-bottom: 10px;
+  }
+
+  .sel-box > ul {
+    top: 67px;
+    width: 260px;
+    left: -30%;
+  }
+
+  .break-lg cq-context  {
+    height: calc(100% - 90px);
+  }
+
+  .current-price-value-num {
+    font-size: 28px;
+  }
+
+  .current-diff-col h5 {
+    font-size: 16px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up 랩탑/데스크탑, 992픽셀 이상) */
+@media only screen and (min-width: 992px) {
+  .logo {
+    width:166px;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up 대형 랩탑, 데스크탑 1200픽셀 이상) */
+@media only screen and (min-width: 1200px) {
+  
+}
